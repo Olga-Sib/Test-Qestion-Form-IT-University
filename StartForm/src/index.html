@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+<form class="form" id="form__field" action="https://60376bfd5435040017722533.mockapi.io/form" method="POST">
+
+    <h1 class="form__title">Задать вопрос</h1>
+
+    <div class="form__fields">
+        <div class="form__field">
+            <input class="form__input" type="text" name="name" id="name" placeholder="Фамилия Имя Отчество*" pattern="^[а-яА-ЯёЁ\s]+$" required="">
+            <span class="form__error">Введите Ваше ФИО</span>
+        </div>
+        <div class="form__field">
+            <input class="form__input" type="telephone" name="phone" id="phone" placeholder="Телефон*" pattern="^\+7\d{10}$" required="">
+            <span class="form__error">Введите номер в формате +7хххххххххх</span>
+        </div>
+        <div class="form__field">
+            <input class="form__input" type="email" name="email" id="email" placeholder="Email">
+        </div>
+    </div>
+    <div class="form__field">
+    <button class="form__button" type="submit" name="send" id="send" value="ОТПРАВИТЬ ЗАПРОС">ОТПРАВИТЬ ЗАПРОС</button>
+    </div>
+</form>
+</body>
+</html>
